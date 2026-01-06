@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 20vh;
+    width: 100vw;
+    background: black;
+    margin-top: -25px;
+    margin-left: -8px;
+    margin-bottom: 0px;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+header h1{
+    text-align: center;
+    font-size: 6em;
+    color: white;
+    margin: 0%;
+}
+
+header p{
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+    margin-top: 10px;
+}
+
+.criador{
+    text-decoration: underline;
+    font-size: 1.4em;
+}
