@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        table{
+            width: 400px;
+        }
+
+        td, th{
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table
+            Thead
+                tr, td, th
+            Tbody
+                tr, td, th
+            Tfoot
+                tr, td, th
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">46.081.801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.393.441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.223.547</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.870.907</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.890.517</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.223.263</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.562.007</td>
+            </tr>
+            <tr>
+                <td>Cea0rá</td>
+                <td class="num">9.268.836</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>84.352.783</strong></td>
+            </tr>
+        </tfoot>
+    </table>  
+</body>
+</html>
